@@ -84,5 +84,5 @@
     <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
     <plugin name="cozzbie.plugin.phonecalltrap" spec="^0.1.2" />
     <plugin name="io.gvox.plugin.phonecalltrap" spec="^0.1.2" />
-    <engine name="android" spec="~6.4.0" />
+    <engine name="android" spec="6.4.0" />
 </widget>
