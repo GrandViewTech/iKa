@@ -34,7 +34,7 @@ var AddPage = /** @class */ (function () {
     };
     AddPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-add',template:/*ion-inline-start:"F:\gRandViewTech\inventClone\src\pages\add\add.html"*/'<!--\n  Generated template for the AddPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar padding color="fblue">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Hom556666e</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"F:\gRandViewTech\inventClone\src\pages\add\add.html"*/,
+            selector: 'page-add',template:/*ion-inline-start:"/puneetsharma/project/startup/iKa/FrontEnd/src/pages/add/add.html"*/'<!--\n  Generated template for the AddPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar padding color="fblue">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Hom556666e</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/puneetsharma/project/startup/iKa/FrontEnd/src/pages/add/add.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
     ], AddPage);
@@ -87,7 +87,7 @@ module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 198:
+/***/ 197:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -95,7 +95,7 @@ module.exports = webpackAsyncContext;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__add_add__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__list_list__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__list_list__ = __webpack_require__(198);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -155,7 +155,7 @@ var HomePage = /** @class */ (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: "page-home",template:/*ion-inline-start:"F:\gRandViewTech\inventClone\src\pages\home\home.html"*/'<ion-menu id="dashboardmenu" [content]="dashboard" side="left" class="tparent dashboard" color="fblue" persistent="true">\n	<ion-header>\n		<ion-navbar color="fblue">\n			<button ion-button start clear class="menubutton" menuToggle>\n				<span>\n					<img src="assets/ic_back.png" style="width:40px">\n				</span>\n			</button>\n			<p class="btn-title-menu">InvenTm Menu</p>\n		</ion-navbar>\n	</ion-header>\n	<ion-content class="scroll">\n    <ion-list class="burgerMenu-list">\n			<button ion-item menuClose class="burgerMenu-item" *ngFor="let burmenu of burgerMenu" (tap)="ber_menu(burmenu.name,burmenu.id)">{{burmenu.name}}\n			</button>\n		</ion-list>\n	</ion-content>\n	<ion-footer>\n		<ion-list class="burgerMenu-list">\n			<button ion-item class="burgerMenu-item">Sign out</button>\n		</ion-list>\n	</ion-footer>\n</ion-menu>\n<ion-header>\n  <ion-navbar padding color="fblue">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content class="bg-blue-color" #dashboard>\n\n  <ion-grid>\n    <ion-row style="text-align:center">\n      <ion-col col-6>\n        <div class="mymoney"><span>\n					<img src="assets/imgs/beneficiary.png" style="height:50px;width:50px">\n				</span></div>\n        <p>Add</p>\n      </ion-col>\n      <ion-col col-6>\n        <div class="mymoney"><span>\n					<img src="assets/imgs/edit_profile.png" style="height:50px;width:50px">\n				</span></div>\n        <p>Edit</p>\n      </ion-col>\n    </ion-row>\n\n    <ion-row style="text-align:center">\n      <ion-col col-6>\n        <div class="mymoney"><span>\n					<img src="assets/imgs/delete.png" style="height:50px;width:50px">\n				</span></div>\n        <p>Delete</p>\n      </ion-col>\n      <ion-col col-6>\n        <div class="mymoney"><span>\n					<img src="assets/imgs/edit_profile.png" style="height:50px;width:50px">\n				</span></div>\n        <p>Update</p>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n  <!-- <ion-row>\n      <ion-col>\n        1 of 3\n      </ion-col>\n      <ion-col>\n        2 of 3\n      </ion-col>\n      <ion-col>\n        3 of 3\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n  <ion-grid>\n    <ion-row>\n      <ion-col>\n        1 of 3\n      </ion-col>\n      <ion-col col-8>\n        2 of 3 (wider)\n      </ion-col>\n      <ion-col>\n        3 of 3\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        1 of 3\n      </ion-col>\n      <ion-col col-6>\n        2 of 3 (wider)\n      </ion-col>\n      <ion-col>\n        3 of 3\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n\n  <ion-grid>\n    <ion-row>\n      <ion-col>\n        1 of 2\n      </ion-col>\n      <ion-col>\n        2 of 2\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        1 of 3\n      </ion-col>\n      <ion-col>\n        2 of 3\n      </ion-col>\n      <ion-col>\n        3 of 3\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n  <ion-grid>\n    <ion-row>\n      <ion-col>\n        1 of 3\n      </ion-col>\n      <ion-col col-8>\n        2 of 3 (wider)\n      </ion-col>\n      <ion-col>\n        3 of 3\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        1 of 3\n      </ion-col>\n      <ion-col col-6>\n        2 of 3 (wider)\n      </ion-col>\n      <ion-col>\n        3 of 3\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n  <ion-grid>\n    <ion-row>\n      <ion-col>\n        1 of 3\n      </ion-col>\n      <ion-col col-auto>\n        Variable width content\n      </ion-col>\n      <ion-col>\n        3 of 3\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        1 of 4\n      </ion-col>\n      <ion-col>\n        2 of 4\n      </ion-col>\n      <ion-col col-auto>\n        <ion-input placeholder="Variable width input"></ion-input>\n      </ion-col>\n      <ion-col>\n        4 of 4\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n  <ion-grid>\n    <ion-row>\n      <ion-col col-4>\n        1 of 4\n      </ion-col>\n      <ion-col col-2>\n        2 of 4\n      </ion-col>\n      <ion-col col-2>\n        3 of 4\n      </ion-col>\n      <ion-col col-4>\n        4 of 4\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n  <ion-grid>\n    <ion-row>\n      <ion-col col-12 col-sm>\n        1 of 4\n      </ion-col>\n      <ion-col col-12 col-sm>\n        2 of 4\n      </ion-col>\n      <ion-col col-12 col-sm>\n        3 of 4\n      </ion-col>\n      <ion-col col-12 col-sm>\n        4 of 4\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n  <ion-grid>\n    <ion-row>\n      <ion-col col-3>\n        1 of 2\n      </ion-col>\n      <ion-col col-3 offset-3>\n        2 of 2\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n  <ion-grid>\n    <ion-row>\n      <ion-col col-md-3>\n        1 of 3\n      </ion-col>\n      <ion-col col-md-3>\n        2 of 3\n      </ion-col>\n      <ion-col col-md-3 offset-md-3>\n        3 of 3\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n\n  <ion-grid>\n    <ion-row>\n      <ion-col col-9 push-3>\n        1 of 2\n      </ion-col>\n      <ion-col col-3 pull-9>\n        2 of 2\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n  <ion-grid>\n    <ion-row>\n      <ion-col col-md-6 push-md-3>\n        1 of 3\n      </ion-col>\n      <ion-col col-md-3 push-md-3>\n        2 of 3\n      </ion-col>\n      <ion-col col-md-3 pull-md-9>\n        3 of 3\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n  <ion-grid>\n    <ion-row align-items-start>\n      <ion-col>\n        1 of 4\n      </ion-col>\n      <ion-col>\n        2 of 4\n      </ion-col>\n      <ion-col>\n        3 of 4\n      </ion-col>\n      <ion-col>\n        4 of 4 <br>#<br>#<br>#\n      </ion-col>\n    </ion-row>\n\n    <ion-row align-items-center>\n      <ion-col>\n        1 of 4\n      </ion-col>\n      <ion-col>\n        2 of 4\n      </ion-col>\n      <ion-col>\n        3 of 4\n      </ion-col>\n      <ion-col>\n        4 of 4 <br>#<br>#<br>#\n      </ion-col>\n    </ion-row>\n\n    <ion-row align-items-end>\n      <ion-col>\n        1 of 4\n      </ion-col>\n      <ion-col>\n        2 of 4\n      </ion-col>\n      <ion-col>\n        3 of 4\n      </ion-col>\n      <ion-col>\n        4 of 4 <br>#<br>#<br>#\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n  <ion-grid>\n    <ion-row>\n      <ion-col align-self-start>\n        <div>\n          1 of 4\n        </div>\n      </ion-col>\n      <ion-col align-self-center>\n        <div>\n          2 of 4\n        </div>\n      </ion-col>\n      <ion-col align-self-end>\n        <div>\n          3 of 4\n        </div>\n      </ion-col>\n      <ion-col>\n        <div>\n          4 of 4 <br>#<br>#<br>#\n        </div>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n  <ion-grid>\n    <ion-row justify-content-start>\n      <ion-col col-3>\n        1 of 2\n      </ion-col>\n      <ion-col col-3>\n        2 of 2\n      </ion-col>\n    </ion-row>\n\n    <ion-row justify-content-center>\n      <ion-col col-3>\n        1 of 2\n      </ion-col>\n      <ion-col col-3>\n        2 of 2\n      </ion-col>\n    </ion-row>\n\n    <ion-row justify-content-end>\n      <ion-col col-3>\n        1 of 2\n      </ion-col>\n      <ion-col col-3>\n        2 of 2\n      </ion-col>\n    </ion-row>\n\n    <ion-row justify-content-around>\n      <ion-col col-3>\n        1 of 2\n      </ion-col>\n      <ion-col col-3>\n        2 of 2\n      </ion-col>\n    </ion-row>\n\n    <ion-row justify-content-between>\n      <ion-col col-3>\n        1 of 2\n      </ion-col>\n      <ion-col col-3>\n        2 of 2\n      </ion-col>\n    </ion-row>\n  </ion-grid> -->\n  <!-- <button ion-button secondary menuToggle>Toggle Menu</button> -->\n</ion-content>\n'/*ion-inline-end:"F:\gRandViewTech\inventClone\src\pages\home\home.html"*/
+            selector: "page-home",template:/*ion-inline-start:"/puneetsharma/project/startup/iKa/FrontEnd/src/pages/home/home.html"*/'<ion-menu id="dashboardmenu" [content]="dashboard" side="left" class="tparent dashboard" color="fblue" persistent="true">\n	<ion-header>\n		<ion-navbar color="fblue">\n			<button ion-button start clear class="menubutton" menuToggle>\n				<span>\n					<img src="assets/ic_back.png" style="width:40px">\n				</span>\n			</button>\n			<p class="btn-title-menu">InvenTm Menu</p>\n		</ion-navbar>\n	</ion-header>\n	<ion-content class="scroll">\n    <ion-list class="burgerMenu-list">\n			<button ion-item menuClose class="burgerMenu-item" *ngFor="let burmenu of burgerMenu" (tap)="ber_menu(burmenu.name,burmenu.id)">{{burmenu.name}}\n			</button>\n		</ion-list>\n	</ion-content>\n	<ion-footer>\n		<ion-list class="burgerMenu-list">\n			<button ion-item class="burgerMenu-item">Sign out</button>\n		</ion-list>\n	</ion-footer>\n</ion-menu>\n<ion-header>\n  <ion-navbar padding color="fblue">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content class="bg-blue-color" #dashboard>\n\n  <ion-grid>\n    <ion-row style="text-align:center">\n      <ion-col col-6>\n        <div class="mymoney"><span>\n					<img src="assets/imgs/beneficiary.png" style="height:50px;width:50px">\n				</span></div>\n        <p>Add</p>\n      </ion-col>\n      <ion-col col-6>\n        <div class="mymoney"><span>\n					<img src="assets/imgs/edit_profile.png" style="height:50px;width:50px">\n				</span></div>\n        <p>Edit</p>\n      </ion-col>\n    </ion-row>\n\n    <ion-row style="text-align:center">\n      <ion-col col-6>\n        <div class="mymoney"><span>\n					<img src="assets/imgs/delete.png" style="height:50px;width:50px">\n				</span></div>\n        <p>Delete</p>\n      </ion-col>\n      <ion-col col-6>\n        <div class="mymoney"><span>\n					<img src="assets/imgs/edit_profile.png" style="height:50px;width:50px">\n				</span></div>\n        <p>Update</p>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n  <!-- <ion-row>\n      <ion-col>\n        1 of 3\n      </ion-col>\n      <ion-col>\n        2 of 3\n      </ion-col>\n      <ion-col>\n        3 of 3\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n  <ion-grid>\n    <ion-row>\n      <ion-col>\n        1 of 3\n      </ion-col>\n      <ion-col col-8>\n        2 of 3 (wider)\n      </ion-col>\n      <ion-col>\n        3 of 3\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        1 of 3\n      </ion-col>\n      <ion-col col-6>\n        2 of 3 (wider)\n      </ion-col>\n      <ion-col>\n        3 of 3\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n\n  <ion-grid>\n    <ion-row>\n      <ion-col>\n        1 of 2\n      </ion-col>\n      <ion-col>\n        2 of 2\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        1 of 3\n      </ion-col>\n      <ion-col>\n        2 of 3\n      </ion-col>\n      <ion-col>\n        3 of 3\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n  <ion-grid>\n    <ion-row>\n      <ion-col>\n        1 of 3\n      </ion-col>\n      <ion-col col-8>\n        2 of 3 (wider)\n      </ion-col>\n      <ion-col>\n        3 of 3\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        1 of 3\n      </ion-col>\n      <ion-col col-6>\n        2 of 3 (wider)\n      </ion-col>\n      <ion-col>\n        3 of 3\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n  <ion-grid>\n    <ion-row>\n      <ion-col>\n        1 of 3\n      </ion-col>\n      <ion-col col-auto>\n        Variable width content\n      </ion-col>\n      <ion-col>\n        3 of 3\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        1 of 4\n      </ion-col>\n      <ion-col>\n        2 of 4\n      </ion-col>\n      <ion-col col-auto>\n        <ion-input placeholder="Variable width input"></ion-input>\n      </ion-col>\n      <ion-col>\n        4 of 4\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n  <ion-grid>\n    <ion-row>\n      <ion-col col-4>\n        1 of 4\n      </ion-col>\n      <ion-col col-2>\n        2 of 4\n      </ion-col>\n      <ion-col col-2>\n        3 of 4\n      </ion-col>\n      <ion-col col-4>\n        4 of 4\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n  <ion-grid>\n    <ion-row>\n      <ion-col col-12 col-sm>\n        1 of 4\n      </ion-col>\n      <ion-col col-12 col-sm>\n        2 of 4\n      </ion-col>\n      <ion-col col-12 col-sm>\n        3 of 4\n      </ion-col>\n      <ion-col col-12 col-sm>\n        4 of 4\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n  <ion-grid>\n    <ion-row>\n      <ion-col col-3>\n        1 of 2\n      </ion-col>\n      <ion-col col-3 offset-3>\n        2 of 2\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n  <ion-grid>\n    <ion-row>\n      <ion-col col-md-3>\n        1 of 3\n      </ion-col>\n      <ion-col col-md-3>\n        2 of 3\n      </ion-col>\n      <ion-col col-md-3 offset-md-3>\n        3 of 3\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n\n  <ion-grid>\n    <ion-row>\n      <ion-col col-9 push-3>\n        1 of 2\n      </ion-col>\n      <ion-col col-3 pull-9>\n        2 of 2\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n  <ion-grid>\n    <ion-row>\n      <ion-col col-md-6 push-md-3>\n        1 of 3\n      </ion-col>\n      <ion-col col-md-3 push-md-3>\n        2 of 3\n      </ion-col>\n      <ion-col col-md-3 pull-md-9>\n        3 of 3\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n  <ion-grid>\n    <ion-row align-items-start>\n      <ion-col>\n        1 of 4\n      </ion-col>\n      <ion-col>\n        2 of 4\n      </ion-col>\n      <ion-col>\n        3 of 4\n      </ion-col>\n      <ion-col>\n        4 of 4 <br>#<br>#<br>#\n      </ion-col>\n    </ion-row>\n\n    <ion-row align-items-center>\n      <ion-col>\n        1 of 4\n      </ion-col>\n      <ion-col>\n        2 of 4\n      </ion-col>\n      <ion-col>\n        3 of 4\n      </ion-col>\n      <ion-col>\n        4 of 4 <br>#<br>#<br>#\n      </ion-col>\n    </ion-row>\n\n    <ion-row align-items-end>\n      <ion-col>\n        1 of 4\n      </ion-col>\n      <ion-col>\n        2 of 4\n      </ion-col>\n      <ion-col>\n        3 of 4\n      </ion-col>\n      <ion-col>\n        4 of 4 <br>#<br>#<br>#\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n  <ion-grid>\n    <ion-row>\n      <ion-col align-self-start>\n        <div>\n          1 of 4\n        </div>\n      </ion-col>\n      <ion-col align-self-center>\n        <div>\n          2 of 4\n        </div>\n      </ion-col>\n      <ion-col align-self-end>\n        <div>\n          3 of 4\n        </div>\n      </ion-col>\n      <ion-col>\n        <div>\n          4 of 4 <br>#<br>#<br>#\n        </div>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n  <ion-grid>\n    <ion-row justify-content-start>\n      <ion-col col-3>\n        1 of 2\n      </ion-col>\n      <ion-col col-3>\n        2 of 2\n      </ion-col>\n    </ion-row>\n\n    <ion-row justify-content-center>\n      <ion-col col-3>\n        1 of 2\n      </ion-col>\n      <ion-col col-3>\n        2 of 2\n      </ion-col>\n    </ion-row>\n\n    <ion-row justify-content-end>\n      <ion-col col-3>\n        1 of 2\n      </ion-col>\n      <ion-col col-3>\n        2 of 2\n      </ion-col>\n    </ion-row>\n\n    <ion-row justify-content-around>\n      <ion-col col-3>\n        1 of 2\n      </ion-col>\n      <ion-col col-3>\n        2 of 2\n      </ion-col>\n    </ion-row>\n\n    <ion-row justify-content-between>\n      <ion-col col-3>\n        1 of 2\n      </ion-col>\n      <ion-col col-3>\n        2 of 2\n      </ion-col>\n    </ion-row>\n  </ion-grid> -->\n  <!-- <button ion-button secondary menuToggle>Toggle Menu</button> -->\n</ion-content>\n'/*ion-inline-end:"/puneetsharma/project/startup/iKa/FrontEnd/src/pages/home/home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* MenuController */]])
@@ -167,7 +167,7 @@ var HomePage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 199:
+/***/ 198:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -212,7 +212,7 @@ var ListPage = /** @class */ (function () {
     };
     ListPage = ListPage_1 = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-list',template:/*ion-inline-start:"F:\gRandViewTech\inventClone\src\pages\list\list.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>List</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n      <ion-icon [name]="item.icon" item-start></ion-icon>\n      {{item.title}}\n      <div class="item-note" item-end>\n        {{item.note}}\n      </div>\n    </button>\n  </ion-list>\n  <div *ngIf="selectedItem" padding>\n    You navigated here from <b>{{selectedItem.title}}</b>\n  </div>\n</ion-content>\n'/*ion-inline-end:"F:\gRandViewTech\inventClone\src\pages\list\list.html"*/
+            selector: 'page-list',template:/*ion-inline-start:"/puneetsharma/project/startup/iKa/FrontEnd/src/pages/list/list.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>List</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n      <ion-icon [name]="item.icon" item-start></ion-icon>\n      {{item.title}}\n      <div class="item-note" item-end>\n        {{item.note}}\n      </div>\n    </button>\n  </ion-list>\n  <div *ngIf="selectedItem" padding>\n    You navigated here from <b>{{selectedItem.title}}</b>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/puneetsharma/project/startup/iKa/FrontEnd/src/pages/list/list.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
     ], ListPage);
@@ -224,13 +224,13 @@ var ListPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 200:
+/***/ 199:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(221);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(220);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -238,7 +238,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 221:
+/***/ 220:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -246,13 +246,13 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_background_mode__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_background_mode__ = __webpack_require__(262);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(270);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_home__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_list_list__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_home__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_list_list__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_add_add__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_status_bar__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_splash_screen__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_status_bar__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_splash_screen__ = __webpack_require__(196);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__angular_common_http__ = __webpack_require__(271);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__angular_http__ = __webpack_require__(277);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -323,10 +323,9 @@ var AppModule = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_background_mode__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(197);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -341,13 +340,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
+//import { BackgroundMode } from "@ionic-native/background-mode";
+//declare var PhoneCallTrap: any;
 var MyApp = /** @class */ (function () {
-    function MyApp(platform, statusBar, splashScreen, backgroundMode) {
+    function MyApp(platform, statusBar, splashScreen) {
         this.platform = platform;
         this.statusBar = statusBar;
         this.splashScreen = splashScreen;
-        this.backgroundMode = backgroundMode;
         this.rootPage = __WEBPACK_IMPORTED_MODULE_4__pages_home_home__["a" /* HomePage */];
         this.initializeApp();
         // used for an example of ngFor and navigation
@@ -355,52 +354,56 @@ var MyApp = /** @class */ (function () {
     MyApp.prototype.initializeApp = function () {
         var _this = this;
         this.platform.ready().then(function () {
-            _this.backgroundMode.enable();
-            if (_this.platform.is("cordova")) {
-                //Subscribe on pause
-                _this.platform.pause.subscribe(function () {
-                    PhoneCallTrap.onCall(function (obj) {
-                        var callObj = JSON.parse(obj), state = callObj.state, callingNumber = callObj.incomingNumber;
-                        switch (state) {
-                            case "RINGING":
-                                alert("RINGING");
-                                this.backgroundMode.moveToForeground();
-                                console.log("Phone is ringing", callingNumber);
-                                break;
-                            case "OFFHOOK":
-                                //alert(2);
-                                console.log("Phone is off-hook");
-                                break;
-                            case "IDLE":
-                                //alert(3);
-                                console.log("Phone is idle");
-                                break;
-                        }
-                    });
-                });
-                //Subscribe on resume
-                _this.platform.resume.subscribe(function () {
-                    window["paused"] = 0;
-                    PhoneCallTrap.onCall(function (obj) {
-                        var callObj = JSON.parse(obj), state = callObj.state, callingNumber = callObj.incomingNumber;
-                        switch (state) {
-                            case "RINGING":
-                                alert("RINGING");
-                                this.backgroundMode.moveToForeground();
-                                console.log("Phone is ringing", callingNumber);
-                                break;
-                            case "OFFHOOK":
-                                //alert(2);
-                                console.log("Phone is off-hook");
-                                break;
-                            case "IDLE":
-                                //alert(3);
-                                console.log("Phone is idle");
-                                break;
-                        }
-                    });
-                });
-            }
+            // this.backgroundMode.enable();
+            // if (this.platform.is("cordova")) {
+            //   //Subscribe on pause
+            //   this.platform.pause.subscribe(() => {
+            //     PhoneCallTrap.onCall(function(obj) {
+            //       var callObj = JSON.parse(obj),
+            //         state = callObj.state,
+            //         callingNumber = callObj.incomingNumber;
+            //       switch (state) {
+            //         case "RINGING":
+            //           alert("RINGING");
+            //           this.backgroundMode.moveToForeground();
+            //           console.log("Phone is ringing", callingNumber);
+            //           break;
+            //         case "OFFHOOK":
+            //           //alert(2);
+            //           console.log("Phone is off-hook");
+            //           break;
+            //         case "IDLE":
+            //           //alert(3);
+            //           console.log("Phone is idle");
+            //           break;
+            //       }
+            //     });
+            //   });
+            //   //Subscribe on resume
+            //   this.platform.resume.subscribe(() => {
+            //     window["paused"] = 0;
+            //     PhoneCallTrap.onCall(function(obj) {
+            //       var callObj = JSON.parse(obj),
+            //         state = callObj.state,
+            //         callingNumber = callObj.incomingNumber;
+            //       switch (state) {
+            //         case "RINGING":
+            //           alert("RINGING");
+            //           this.backgroundMode.moveToForeground();
+            //           console.log("Phone is ringing", callingNumber);
+            //           break;
+            //         case "OFFHOOK":
+            //           //alert(2);
+            //           console.log("Phone is off-hook");
+            //           break;
+            //         case "IDLE":
+            //           //alert(3);
+            //           console.log("Phone is idle");
+            //           break;
+            //       }
+            //     });
+            //   });
+            // }
             // Okay, so the platform is ready and our plugins are available.
             // Here you can do any higher level native things you might need.
             _this.statusBar.styleDefault();
@@ -412,12 +415,11 @@ var MyApp = /** @class */ (function () {
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Nav */])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"F:\gRandViewTech\inventClone\src\app\app.html"*/'\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n'/*ion-inline-end:"F:\gRandViewTech\inventClone\src\app\app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/puneetsharma/project/startup/iKa/FrontEnd/src/app/app.html"*/'\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n'/*ion-inline-end:"/puneetsharma/project/startup/iKa/FrontEnd/src/app/app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */],
-            __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */],
-            __WEBPACK_IMPORTED_MODULE_5__ionic_native_background_mode__["a" /* BackgroundMode */]])
+            __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
     return MyApp;
 }());
@@ -426,5 +428,5 @@ var MyApp = /** @class */ (function () {
 
 /***/ })
 
-},[200]);
+},[199]);
 //# sourceMappingURL=main.js.map
