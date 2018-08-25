@@ -1,0 +1,61 @@
+{
+  "_from": "cozzbie.plugin.phonecalltrap@^0.1.2",
+  "_id": "cozzbie.plugin.phonecalltrap@0.1.2",
+  "_inBundle": false,
+  "_integrity": "sha1-j40M4ZsUXy0jSf3FQnqpOTB4y9I=",
+  "_location": "/cozzbie.plugin.phonecalltrap",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "cozzbie.plugin.phonecalltrap@^0.1.2",
+    "name": "cozzbie.plugin.phonecalltrap",
+    "escapedName": "cozzbie.plugin.phonecalltrap",
+    "rawSpec": "^0.1.2",
+    "saveSpec": null,
+    "fetchSpec": "^0.1.2"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cozzbie.plugin.phonecalltrap/-/cozzbie.plugin.phonecalltrap-0.1.2.tgz",
+  "_shasum": "8f8d0ce19b145f2d2349fdc5427aa9393078cbd2",
+  "_spec": "cozzbie.plugin.phonecalltrap@^0.1.2",
+  "_where": "/puneetsharma/project/startup/iKa/FrontEnd",
+  "author": {
+    "name": "Timi Aiyemo"
+  },
+  "bugs": {
+    "url": "https://github.com/cozzbie/cordova-phone-call-trap.git/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cozzbie.plugin.phonecalltrap",
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "A phone call trap",
+  "homepage": "https://github.com/cozzbie/cordova-phone-call-trap.git#readme",
+  "keywords": [
+    "phonegap",
+    "calendar",
+    "phone",
+    "call",
+    "phone-call",
+    "ringing",
+    "phone-state",
+    "call-state",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "license": "MIT",
+  "name": "cozzbie.plugin.phonecalltrap",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cozzbie/cordova-phone-call-trap.git"
+  },
+  "version": "0.1.2"
+}

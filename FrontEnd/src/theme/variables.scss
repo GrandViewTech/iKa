@@ -1,0 +1,139 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+
+// Font path is used to include ionicons,
+// roboto, and noto sans fonts
+$font-path: "../assets/fonts";
+
+
+// The app direction is used to include
+// rtl styles in your app. For more info, please see:
+// http://ionicframework.com/docs/theming/rtl-support/
+$app-direction: ltr;
+
+
+@import "ionic.globals";
+
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/theming/overriding-ionic-variables/
+
+
+
+
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+
+$colors: (
+  primary:    #403773,
+  secondary:  #32db64,
+  danger:     #f53d3d,
+  light:      #f4f4f4,
+  dark:       #222,
+  fblue:      #403773,
+  white:	  #fff,
+  fwhite : #fff,
+  fred:		  #ee4949,
+  lgray:	  #000000,
+  gray:	  	  #cccccc,
+  graybg:     #EDEDED,
+  black_sh:   #666565,
+  form-gray:  #585353,
+  action-sheet-btn: #6f6c6c,
+  succes-page-coolor : #9b9898,
+  apply-btn-bg : #CCCCFF,
+  loadMoneyGray :#989898
+);
+
+$fontsize: (
+  11:    	  11px,
+  12:  		  12px,
+  13:     	  13px,
+  14:     	  14px,
+  15:      	  15px,
+  16:      	  16px,
+  17:      	  17px,
+  18:      	  18px,
+  20:      	  20px,
+  21:      	  21px,
+  22:      	  22px,
+  23:      	  23px,
+  24:      	  24px,
+  25:      	  25px
+);
+$backgrund-img: (
+  bg1:    	url('../assets/img/home-bg.png'),
+  bg2: 		url('../assets/img/login-bg.png'),
+  topbg: 		url('../assets/img/top_background.png'),
+  bglanding: url('../assets/img/bg-landing.png'),
+  offerslider1: url('../assets/img/offer_banner1.png'),
+  offerslider2: url('../assets/img/offer_banner2.png'),
+  offerslider3: url('../assets/img/offer_banner3.png'),
+  offerslider4: url('../assets/img/bookmyshow_banner.png'),
+  offerslider5: url('../assets/img/big_bazar.jpg'),
+  arrow_down:url('../assets/img/ic_arrow_down.png'),
+  overlaydash:url('../assets/img/Overlay2.png '),
+  cardblue:url('../assets/img/account_card.png '),
+  slipbg:url('../assets/img/print_arrow.png')
+);
+
+$popover-md-min-width: 280px;
+$select-md-icon-color: #403773;
+$select-md-placeholder-color: #403773;
+$popover-md-radio-label-text-color: purple;
+$popover-md-radio-label-text-color-checked: red;
+
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+
+
+
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+
+
+
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+
+
+
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import "ionic.theme.default";
+
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/ionicons/
+
+@import "ionic.ionicons";
+
+
+// Fonts
+// --------------------------------------------------
+
+@import "roboto";
+@import "noto-sans";
