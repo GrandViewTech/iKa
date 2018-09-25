@@ -1,22 +1,21 @@
 package com.gvt.ika.app.client;
 
 import com.gvt.ika.common.rest.entity.dto.Response;
+import org.hibernate.annotations.GeneratorType;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestHeader;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
+@CrossOrigin
 @RestController
 public class AuthController {
 
 
-    @PostMapping(value = "/validate")
+    @GetMapping(value = "/validate")
     @ResponseBody
     public Response<Map<String, Object>> authenticate(@RequestHeader("Authorization") String authorization) {
         String token = UUID.randomUUID().toString();

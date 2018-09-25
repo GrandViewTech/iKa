@@ -1,26 +1,42 @@
 package com.gvt.ika.conf;
 
+import org.apache.log4j.PropertyConfigurator;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Properties;
 
 @SpringBootApplication(scanBasePackages =
         {"com.gvt.ika"})
-@PropertySource(value = "file:conf/auth.properties")
+@PropertySource(value = "file:conf/iAuthorized/application.properties")
 public class Application {
 
-    final public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer() throws IOException
-    {
+    static {
+        try {
+            Properties props = new Properties();
+            props.load(new FileInputStream("conf/iAuthorized/log4j.properties"));
+            PropertyConfigurator.configure(props);
+        } catch (Exception exception) {
+            exception.printStackTrace();
+
+        }
+
+
+    }
+
+    final public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer() throws IOException {
         PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer = new PropertySourcesPlaceholderConfigurer();
         return propertySourcesPlaceholderConfigurer;
     }
 
-    public static void main(String[] args) throws Exception
-    {
+    public static void main(String[] args) throws Exception {
         SpringApplication.run(Application.class, args);
     }
+
+
 }
 
