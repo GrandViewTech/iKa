@@ -12,3 +12,5 @@ buildNumber.properties
 !/.mvn/wrapper/maven-wrapper.jar
 FrontEnd/node_modules
 *.iml
+*.log
+FrontEnd/mobile/node_modules
