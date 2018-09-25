@@ -1,4 +1,4 @@
-package com.gvt.ika.ims.app.entity.bo;
+package com.gvt.ika.app.entity.bo;
 
 public class Catalog {
 
