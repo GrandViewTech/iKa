@@ -3,6 +3,7 @@ package com.gvt.ika.conf;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
@@ -19,8 +20,7 @@ import java.util.Map;
 import java.util.Properties;
 
 @Configuration
-@EnableJpaRepositories(basePackages =
-        { "com.gvt.ika.app.service.repository" })
+@EntityScan(basePackages={"com.gvt.ika.app.entity.bo"})
 public class DatabaseConfiguration {
 
 
@@ -70,7 +70,7 @@ public class DatabaseConfiguration {
         }
         dataSource.setUser(user);
         dataSource.setPassword(password);
-        dataSource.setJdbcUrl(jdbcUrl + "/" + schema + "?autoReconnect=true&useSSL=false");
+        dataSource.setJdbcUrl(jdbcUrl + "/" + schema + "?autoReconnect=true&useSSL=false&allowPublicKeyRetrieval=true");
         dataSource.setInitialPoolSize(3);
         dataSource.setMinPoolSize(3);
         dataSource.setMaxPoolSize(20);
