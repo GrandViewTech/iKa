@@ -1,11 +1,11 @@
-package com.gvt.ika.app.entity.bo;
+package com.gvt.ika.app.entity.bo.sku;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name="HEALTH_AND_BEAUTY_PRODUCT")
+@Table(name="HEALTH_AND_BEAUTY_SKU")
 @DiscriminatorValue(value = "HEALTH_AND_BEAUTY")
-public class HealthAndBeautyProduct extends Product {
+public class HealthAndBeautySKU extends StockKeepingUnit {
 
     @Id
     @Column(name = "ID", length = 30)
