@@ -1,10 +1,8 @@
 package com.gvt.ika.conf;
 
-import com.gvt.ika.common.rest.interceptor.CompanyValidationInterception;
 import org.apache.log4j.PropertyConfigurator;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
@@ -12,17 +10,18 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-@Import(value = {CompanyValidationInterception.class})
+
 @SpringBootApplication(scanBasePackages =
         {"com.gvt.ika"})
-@PropertySource(value = "file:conf/ims/application.properties")
+@PropertySource(value = "file:conf/tms/application.properties")
 public class Application {
 
     static {
         try {
             Properties props = new Properties();
-            props.load(new FileInputStream("conf/ims/log4j.properties"));
+            props.load(new FileInputStream("conf/tms/log4j.properties"));
             PropertyConfigurator.configure(props);
+
             Properties p = new Properties(System.getProperties());
             p.put("com.mchange.v2.log.MLog", "com.mchange.v2.log.FallbackMLog");
             p.put("com.mchange.v2.log.FallbackMLog.DEFAULT_CUTOFF_LEVEL", "OFF");

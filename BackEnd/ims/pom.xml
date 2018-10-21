@@ -18,7 +18,11 @@
             <artifactId>domain</artifactId>
             <version>${base.version}</version>
         </dependency>
-
+        <dependency>
+            <groupId>com.grandviewtech.ika</groupId>
+            <artifactId>rest</artifactId>
+            <version>${base.version}</version>
+        </dependency>
 
     </dependencies>
 </project>

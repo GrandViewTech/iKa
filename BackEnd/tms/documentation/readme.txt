@@ -1,0 +1,1 @@
+IAUTHORIZE is the schema for the AUTHORIZATION micro service.

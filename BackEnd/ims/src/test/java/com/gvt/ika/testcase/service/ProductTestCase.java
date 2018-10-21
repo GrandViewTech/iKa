@@ -1,4 +1,4 @@
-package com.gvt.ika.testcase;
+package com.gvt.ika.testcase.service;
 
 import com.gvt.ika.app.entity.bo.Product;
 import com.gvt.ika.app.entity.bo.UnitOfMeasurement;

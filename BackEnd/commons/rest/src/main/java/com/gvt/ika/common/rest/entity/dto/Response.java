@@ -1,6 +1,12 @@
 package com.gvt.ika.common.rest.entity.dto;
 
-public class Response<T> {
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.gvt.ika.shared.entity.constant.StatusCode;
+import com.gvt.ika.shared.entity.dto.Code;
+
+import java.io.Serializable;
+
+public class Response<T> implements Serializable {
 
     private Integer status;
     private String message;
@@ -31,6 +37,13 @@ public class Response<T> {
         this.payload = payload;
     }
 
+    @JsonIgnore
+    public void setStatusAndMessageCode(Code code)
+    {
+        this.status = code.getStatus();
+        this.message = code.getMessage();
+    }
+
     public Response() {
         super();
     }
@@ -39,6 +52,13 @@ public class Response<T> {
         super();
         this.status = status;
         this.message = message;
+        this.payload = payload;
+    }
+
+    public Response(Code code, T payload) {
+        super();
+        this.status = code.getStatus();
+        this.message = code.getMessage();
         this.payload = payload;
     }
 
