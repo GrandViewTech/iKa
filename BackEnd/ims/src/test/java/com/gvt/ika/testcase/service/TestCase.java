@@ -1,4 +1,4 @@
-package com.gvt.ika.testcase;
+package com.gvt.ika.testcase.service;
 
 import com.gvt.ika.conf.Application;
 import org.junit.runner.RunWith;

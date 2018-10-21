@@ -28,11 +28,11 @@ public class StockKeepingUnit {
     @Column(name = "CODE", unique = true)
     private String code;
 
+
     @JsonIgnore
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "PRODUCT_ID")
     private Product product;
-
 
     public Long getId() {
         return id;
@@ -73,6 +73,9 @@ public class StockKeepingUnit {
     public void setProduct(Product product) {
         this.product = product;
     }
+
+
+
 
     /**
      * UPDATE METHOD
