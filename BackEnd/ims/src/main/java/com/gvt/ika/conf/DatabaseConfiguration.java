@@ -79,8 +79,8 @@ public class DatabaseConfiguration {
         dataSource.setMaxIdleTimeExcessConnections(600);
         dataSource.setPreferredTestQuery(preferredTestQuery);
         dataSource.setIdleConnectionTestPeriod(180);
-        dataSource.setTestConnectionOnCheckin(true);
-        dataSource.setTestConnectionOnCheckout(true);
+        //dataSource.setTestConnectionOnCheckin(true);
+        //dataSource.setTestConnectionOnCheckout(true);
         return dataSource;
     }
 
