@@ -1,1 +1,10 @@
 create schema IMS character set utf8 collate utf8_bin;
+create schema TMS character set utf8 collate utf8_bin;
+
+
+USER CREATION
+
+--
+CREATE USER 'puneet'@'localhost' IDENTIFIED BY 'pass@123';
+GRANT ALL PRIVILEGES ON *.* TO 'puneet'@'localhost';
+CREATE USER 'joe'@'10.0.0.1' DEFAULT ROLE administrator, developer;
