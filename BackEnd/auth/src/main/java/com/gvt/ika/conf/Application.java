@@ -5,11 +5,13 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+@EnableScheduling
 @SpringBootApplication(scanBasePackages =
         {"com.gvt.ika"})
 @PropertySource(value = "file:conf/iAuthorized/application.properties")

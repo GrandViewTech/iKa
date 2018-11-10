@@ -17,6 +17,26 @@ public class UserProfile extends Base {
 
     private String lastName;
 
+    private String emailAddress;
+
+    private String mobile;
+
+    public String getEmailAddress() {
+        return emailAddress;
+    }
+
+    public void setEmailAddress(String emailAddress) {
+        this.emailAddress = emailAddress;
+    }
+
+    public String getMobile() {
+        return mobile;
+    }
+
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
+    }
+
     public String getFirstName() {
         return firstName;
     }
@@ -32,4 +52,6 @@ public class UserProfile extends Base {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+
 }

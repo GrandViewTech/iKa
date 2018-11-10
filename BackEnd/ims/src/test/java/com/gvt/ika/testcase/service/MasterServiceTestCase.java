@@ -11,11 +11,10 @@ public class MasterServiceTestCase extends TestCase {
     private MasterService masterService;
 
     @Test
-public void addMasterCategory()
-{
-    MasterCategory masterCategory = new MasterCategory();
-    masterCategory.setName("Vehicles & Parts");
-    masterCategory.setCode("VP1");
-    masterService.saveOrUpdate(masterCategory);
-}
+    public void addMasterCategory() {
+        MasterCategory masterCategory = new MasterCategory();
+        masterCategory.setName("Vehicles & Parts");
+        masterCategory.setCode("VP1");
+        masterService.saveOrUpdate(masterCategory);
+    }
 }

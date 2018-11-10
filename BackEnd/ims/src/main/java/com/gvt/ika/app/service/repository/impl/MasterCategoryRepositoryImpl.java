@@ -2,7 +2,9 @@ package com.gvt.ika.app.service.repository.impl;
 
 import com.gvt.ika.app.entity.bo.master.MasterCategory;
 import com.gvt.ika.app.entity.bo.master.SubCategory;
-import com.gvt.ika.app.service.repository.MasterRepository;
+import com.gvt.ika.app.service.repository.GenericRepository;
+import com.gvt.ika.app.service.repository.MasterCategoryRepository;
+import com.gvt.ika.common.domain.PersistenceType;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
@@ -11,12 +13,12 @@ import javax.persistence.TypedQuery;
 import java.util.List;
 
 @Repository
-public class MasterRepositoryImpl implements MasterRepository {
+public class MasterCategoryRepositoryImpl extends GenericRepositoryImpl<MasterCategory> implements MasterCategoryRepository {
 
     @PersistenceContext
     private EntityManager entityManager;
 
-    public MasterCategory findByCode(String code) {
+    public MasterCategory findMasterCategoryByCode(String code) {
         String jpql = "SELECT mc FROM MasterCategory mc WHERE mc.code=:code";
         TypedQuery<MasterCategory> query = entityManager.createQuery(jpql, MasterCategory.class);
         query.setParameter("code", code);
@@ -28,26 +30,10 @@ public class MasterRepositoryImpl implements MasterRepository {
     }
 
 
-    public MasterCategory saveOrUpdate(MasterCategory masterCategory) {
+    public MasterCategory saveOrUpdateMasterCategory(MasterCategory masterCategory) {
 
-        if (masterCategory.getId() == null) {
-            entityManager.persist(masterCategory);
-            return masterCategory;
-        } else {
-            masterCategory = entityManager.merge(masterCategory);
-            return masterCategory;
-        }
+         return saveOrUpdate(PersistenceType.findPersistenceType(masterCategory.getId()),masterCategory);
     }
 
 
-    public SubCategory saveOrUpdate(SubCategory subCategory) {
-
-        if (subCategory.getId() == null) {
-            entityManager.persist(subCategory);
-            return subCategory;
-        } else {
-            subCategory = entityManager.merge(subCategory);
-            return subCategory;
-        }
-    }
 }
