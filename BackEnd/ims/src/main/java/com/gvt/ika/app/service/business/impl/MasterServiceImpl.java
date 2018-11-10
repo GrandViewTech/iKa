@@ -17,12 +17,12 @@ public class MasterServiceImpl implements MasterService {
     @Transactional
     public MasterCategory saveOrUpdate(MasterCategory masterCategory) {
         String code = masterCategory.getCode();
-        MasterCategory existing = masterRepository.findByCode(code);
+        MasterCategory existing = masterRepository.findMasterCategoryByCode(code);
         if (existing != null) {
             existing.setName(masterCategory.getName());
-            return masterRepository.saveOrUpdate(existing);
+            return masterRepository.saveOrUpdateMasterCategory(existing);
         } else {
-            return masterRepository.saveOrUpdate(masterCategory);
+            return masterRepository.saveOrUpdateMasterCategory(masterCategory);
         }
     }
 }
