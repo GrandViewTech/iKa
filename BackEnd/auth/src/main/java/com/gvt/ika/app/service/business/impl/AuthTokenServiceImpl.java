@@ -1,17 +1,14 @@
 package com.gvt.ika.app.service.business.impl;
 
 import com.gvt.ika.app.entity.bo.AuthToken;
-import com.gvt.ika.app.entity.exception.InvalidToken;
+import com.gvt.ika.app.entity.exception.InvalidTokenException;
 import com.gvt.ika.app.service.business.AuthTokenService;
 import com.gvt.ika.app.service.repository.AuthTokenRepository;
-import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
-
-import javax.annotation.PostConstruct;
 
 
 @Service
@@ -29,12 +26,12 @@ public class AuthTokenServiceImpl implements AuthTokenService {
 
 
     @Transactional
-    public AuthToken generateToken(AuthToken authToken,Integer expiry) throws  InvalidToken
+    public AuthToken generateToken(AuthToken authToken,Integer expiry) throws InvalidTokenException
         {
             AuthToken existing = authTokenRepository.findByCompanyIdApplicationIdUserIdAndTokenValue(authToken.getCompanyId(),authToken.getApplicationId(),authToken.getUserId(),authToken.getToken());
             if(existing!=null)
             {
-                throw new InvalidToken("Invalid Token");
+                throw new InvalidTokenException("Invalid Token");
             }
             AuthToken alreadyActiveToken=authTokenRepository.findActiveTokenByCompanyIdApplicationIdUserId(authToken.getCompanyId(),authToken.getApplicationId(),authToken.getUserId());
             if(alreadyActiveToken!=null)
@@ -46,7 +43,7 @@ public class AuthTokenServiceImpl implements AuthTokenService {
             return authToken;
         }
 
-        @Transactional(noRollbackFor = InvalidToken.class)
+        @Transactional(noRollbackFor = InvalidTokenException.class)
         public AuthToken updateToken(AuthToken authToken,Integer expiry)
         {
             AuthToken existing = authTokenRepository.findByCompanyIdApplicationIdUserIdAndTokenValue(authToken.getCompanyId(),authToken.getApplicationId(),authToken.getUserId(),authToken.getToken());

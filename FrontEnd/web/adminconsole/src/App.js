@@ -13,8 +13,12 @@ class App extends Component {
   render() {
     return (
       <div className="App title-header ui-widget">
-        <Navigation />
-        <OptionScreen/>
+        <div style={{height:'55px'}}>
+          <Navigation />
+        </div>
+        <div>
+          <OptionScreen/>
+        </div>
       </div>
     );
   }

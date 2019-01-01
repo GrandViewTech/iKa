@@ -6,6 +6,7 @@ import org.springframework.stereotype.Repository;
 import javax.annotation.PostConstruct;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.TypedQuery;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 
@@ -46,8 +47,9 @@ public class GenericDaoImpl<T> implements GenericDao<T> {
        entityManager.remove(object);
     }
 
-    @Override
-    public T saveOrUpdate(T t, Long primaryKey) {
+
+    public T saveOrUpdate(T t, Long primaryKey)
+    {
         if (primaryKey == null) {
             entityManager.persist(t);
             return t;
@@ -57,6 +59,10 @@ public class GenericDaoImpl<T> implements GenericDao<T> {
         }
     }
 
+    public TypedQuery<T> getTypedQuery(String jpql)
+    {
+        return (TypedQuery<T> )getEntityManager().createQuery(jpql,classz.getClass());
+    }
 
 
 }

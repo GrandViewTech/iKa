@@ -22,6 +22,9 @@ public class Application {
             Properties props = new Properties();
             props.load(new FileInputStream("conf/iAuthorized/log4j.properties"));
             PropertyConfigurator.configure(props);
+            Properties p = new Properties(System.getProperties());
+             p.put("com.mchange.v2.log.MLog", "com.mchange.v2.log.FallbackMLog");
+              p.put("com.mchange.v2.log.FallbackMLog.DEFAULT_CUTOFF_LEVEL", "OFF");
         } catch (Exception exception) {
             exception.printStackTrace();
 
