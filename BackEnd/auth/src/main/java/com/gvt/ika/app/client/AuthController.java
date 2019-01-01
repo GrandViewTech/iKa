@@ -1,15 +1,13 @@
 package com.gvt.ika.app.client;
 
 import com.gvt.ika.app.entity.bo.AuthToken;
-import com.gvt.ika.app.entity.exception.InvalidToken;
+import com.gvt.ika.app.entity.exception.InvalidTokenException;
 import com.gvt.ika.app.service.business.AuthTokenService;
 import com.gvt.ika.common.rest.entity.dto.Response;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
@@ -31,7 +29,7 @@ public class AuthController
                     @RequestHeader("XApplicationId") Long applicationId,
                     @RequestHeader("XUserId") Long userId,
                     @RequestHeader("Authorization") String token
-                )   throws InvalidToken
+                )   throws InvalidTokenException
     {
 
         Map<String, Object> responseBody = new HashMap<>();
@@ -68,7 +66,7 @@ public class AuthController
 
     @PostMapping(value="/v1/login")
     @ResponseBody
-    public ResponseEntity<Response<Map<String, Object>>> authenticate(@RequestBody Map<String,String> body) throws InvalidToken
+    public ResponseEntity<Response<Map<String, Object>>> authenticate(@RequestBody Map<String,String> body) throws InvalidTokenException
     {
         String username=body.get("username");
         String password=body.get("password");
